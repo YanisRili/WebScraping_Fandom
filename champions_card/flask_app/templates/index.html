@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champions List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Liste des Champions</h1>
+        <div class="cards-container">
+            {% for champion in champions %}
+                <div class="card">
+                    <img src="{{ champion['image_url'] }}" alt="{{ champion['name'] }}">
+                    <h2>{{ champion['name'] }}</h2>
+                    <p><strong>Title:</strong> {{ champion['title'] }}</p>
+                    <p><strong>Roles:</strong> {{ ', '.join(champion['roles']) }}</p>
+                    <p><strong>Health Scaling:</strong> {{ champion['base_health'] }}</p>
+                    <p><strong>Mana Scaling:</strong> {{ champion['base_mana'] }}</p>
+                    <p><strong>Attack Damage Scaling:</strong> {{ champion['attack_damage'] }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
