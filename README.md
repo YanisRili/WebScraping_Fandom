@@ -34,19 +34,18 @@ pip install requests
 Structure du projet
 
 /WebScrapping_Fandom  
+
 ├── /champions_card
-    ├── /spiders                 # Scripts pour le scraping  
-
+|    ├── /spiders                 # Scripts pour le scraping  
 ├── /flask_app
-    ├── /static                  # Fichiers statiques (images, CSS, etc.)  
-        ├── /images              # Images des champions  
-        └── style.css            # Fichier CSS pour le front  
-    ├── /templates               # Modèles HTML  
-        └── index.html           # Page principale  
-    ├── app.py                   # Script principal Flask  
-    ├── download_images.py       # Script pour télécharger les images  
-
-└── README.md                    # Documentation du projet
+|    ├── /static                  # Fichiers statiques (images, CSS, etc.)  
+|       ├── /images               # Images des champions  
+|        └── style.css            # Fichier CSS pour le front  
+|    ├── /templates               # Modèles HTML  
+|        └── index.html           # Page principale  
+|    ├── app.py                   # Script principal Flask  
+|    ├── download_images.py       # Script pour télécharger les images  
+└── README.md                     # Documentation du projet
 
 Utilisation
 
