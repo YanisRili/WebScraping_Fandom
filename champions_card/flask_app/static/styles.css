@@ -27,9 +27,10 @@ body {
 }
 
 .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+    max-width: 100%;  /* Limite la largeur de l'image à la largeur du conteneur */
+    max-height: 300px; /* Limite la hauteur de l'image à 300px */
+    width: auto;      /* Maintient le ratio de l'image */
+    height: auto;     /* Maintient le ratio de l'image */
 }
 
 .card h2 {
