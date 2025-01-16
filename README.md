@@ -4,6 +4,7 @@ Ce projet est une application web qui permet de collecter et d’afficher des in
 Fonctionnalités
 Scraping des données : Extraction d'informations détaillées sur les champions (nom, rôle, statistiques, image, etc.) depuis la plateforme Fandom.
 https://leagueoflegends.fandom.com/wiki/List_of_champions
+
 Traitement des données :
 Nettoyage des données récupérées (suppression des doublons, formatage des rôles).
 Téléchargement des images des champions et stockage local pour éviter des problèmes de chargement.
